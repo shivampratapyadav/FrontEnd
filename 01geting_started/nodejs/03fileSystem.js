@@ -41,12 +41,12 @@ for(let i=0;i<content.length;i++){
     fs.unlinkSync("New Directory/"+content[i]);
 }
 
-//remove folder:
+//remove directory:
 fs.rmdirSync("New Directory");
 
 */
 
-
+/*
 // fs.existsSync(); this returns true or false according to the file existeance:
 
 console.log(fs.existsSync("newDir/this.txt"));
@@ -54,11 +54,28 @@ console.log(fs.existsSync("newDir/this.txt"));
 // fs.lstatSync();
 //__dirname is a global keyword which tells us that under which folder you are working
 let detailsObj = fs.lstatSync(__dirname+"\\03fileSystem.js");
+*/
 
 
+/*
 //console.log(fs.lstatSync(__dirname+"\\03fileSystem.js"));
 let ans= detailsObj.isFile();
 console.log(ans); 
 
 ans= detailsObj.isDirectory();
 console.log(ans);
+
+*/
+
+
+//////-----------------------------------------------------\\\\\\\
+
+/* Task: write a program to create 10 directories with one file in it with some content:*/
+
+/*
+for(let i=1;i<=10;i++){
+    let dirPathToMake = `Chapter-${i}`;
+    fs.mkdirSync(dirPathToMake);
+    fs.writeFileSync(dirPathToMake+"\\"+`readME${i}.md`, "# readme for "+`${dirPathToMake}`);
+}
+*/
